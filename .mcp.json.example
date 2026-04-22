@@ -9,6 +9,26 @@
       "env": {
         "CONTEXT7_API_KEY": "YOUR_API_KEY_HERE"
       }
+    },
+    "sonarqube": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "SONARQUBE_URL",
+        "-e",
+        "SONARQUBE_ORG",
+        "-e",
+        "SONARQUBE_TOKEN",
+        "mcp/sonarqube"
+      ],
+      "env": {
+        "SONARQUBE_URL": "http://localhost:9000",
+        "SONARQUBE_ORG": "default",
+        "SONARQUBE_TOKEN": "YOUR_SONARQUBE_USER_TOKEN"
+      }
     }
   }
 }
