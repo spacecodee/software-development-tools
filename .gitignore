@@ -1,2 +1,7 @@
 .env
 *.log
+
+# Agents and Skills
+.agents/
+.claude/
+skills-lock.json
