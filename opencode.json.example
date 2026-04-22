@@ -28,11 +28,6 @@
         "SONARQUBE_TOKEN",
         "mcp/sonarqube"
       ],
-      "env": {
-        "SONARQUBE_URL": "http://localhost:9000",
-        "SONARQUBE_ORG": "default",
-        "SONARQUBE_TOKEN": "YOUR_SONARQUBE_USER_TOKEN"
-      },
       "enabled": true
     }
   }
