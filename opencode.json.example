@@ -16,17 +16,8 @@
     "sonarqube": {
       "type": "local",
       "command": [
-        "docker",
-        "run",
-        "-i",
-        "--rm",
-        "-e",
-        "SONARQUBE_URL",
-        "-e",
-        "SONARQUBE_ORG",
-        "-e",
-        "SONARQUBE_TOKEN",
-        "mcp/sonarqube"
+        "bash",
+        "./scripts/mcp-sonarqube.sh"
       ],
       "enabled": true
     }

@@ -1,12 +1,19 @@
 {
   "mcpServers": {
     "context7": {
-      "command": "docker",
+      "command": "npx",
       "args": [
-        "run",
-        "-i",
-        "--rm",
-        "mcp/context7"
+        "-y",
+        "@upstash/context7-mcp"
+      ],
+      "env": {
+        "CONTEXT7_API_KEY": "YOUR_API_KEY_HERE"
+      }
+    },
+    "sonarqube": {
+      "command": "bash",
+      "args": [
+        "./scripts/mcp-sonarqube.sh"
       ]
     }
   }

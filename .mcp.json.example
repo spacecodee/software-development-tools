@@ -11,18 +11,9 @@
       }
     },
     "sonarqube": {
-      "command": "docker",
+      "command": "bash",
       "args": [
-        "run",
-        "-i",
-        "--rm",
-        "-e",
-        "SONARQUBE_URL",
-        "-e",
-        "SONARQUBE_ORG",
-        "-e",
-        "SONARQUBE_TOKEN",
-        "mcp/sonarqube"
+        "./scripts/mcp-sonarqube.sh"
       ]
     }
   }

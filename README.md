@@ -63,6 +63,5 @@ Context7 provides up-to-date documentation and code examples for programming lib
 
 ### SonarQube
 Allows the agent to interact with SonarQube for code quality and security analysis.
-- **Setup**: Runs via Docker (`mcp/sonarqube`).
-- **Environment Variables**: Requires `SONARQUBE_URL`, `SONARQUBE_ORG`, and `SONARQUBE_TOKEN` in your `.env` file.
+- **Setup**: Runs via local wrapper script (`./scripts/mcp-sonarqube.sh`) that manages Docker execution and token retrieval from `.env`.
 - **Usage**: Referenced in `.mcp.json.example` and `.gemini/settings.json`.
