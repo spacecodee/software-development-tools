@@ -3,5 +3,17 @@
 
 # Agents and Skills
 .agents/
+.skills/
 .claude/
+.calude/
 skills-lock.json
+
+# Local MCP Configs (Project Specific)
+.mcp.json
+.copilot/mcp-config.json
+.gemini/settings.json
+opencode.json
+
+# Keep examples
+!*.example
+!**/*.example
