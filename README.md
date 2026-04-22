@@ -6,6 +6,7 @@ This project centralizes essential software development tools using Docker.
 - **PostgreSQL 18.3**: Primary database.
 - **pgAdmin 4**: Web interface for managing PostgreSQL.
 - **SonarQube Server 2026.2.1**: Code quality and security platform.
+- **Mailpit**: SMTP testing server and web UI for email sandboxing.
 
 ## Initial Setup
 
@@ -38,6 +39,8 @@ This project centralizes essential software development tools using Docker.
 ## Access
 - **pgAdmin**: [http://localhost:5050](http://localhost:5050) (Credentials in `.env`)
 - **SonarQube**: [http://localhost:9000](http://localhost:9000) (Default admin: `admin`/`admin`)
+- **Mailpit Web UI**: [http://localhost:8025](http://localhost:8025)
+- **Mailpit SMTP**: `localhost:1025`
 - **Postgres**: `localhost:5432`
 
 ## Security

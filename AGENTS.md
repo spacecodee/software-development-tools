@@ -8,7 +8,7 @@ To provide a ready-to-use development infrastructure (Databases, Analysis Tools,
 ## Technical Architecture
 
 ### 1. Orchestration
-- **Docker Compose**: Orchestrates PostgreSQL 18.3, pgAdmin 4, and SonarQube Community Build.
+- **Docker Compose**: Orchestrates PostgreSQL 18.3, pgAdmin 4, SonarQube, and Mailpit.
 - **Networking**: All services reside in a bridge network named `dev-network`.
 - **Persistence**: Data is persisted through named Docker volumes (`postgres_data`, `sonarqube_data`, etc.).
 
