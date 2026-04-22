@@ -51,3 +51,12 @@ To install project-specific skills, use the provided script:
 ./scripts/install-skills.sh
 ```
 This script uses the official `skills.sh` syntax to add tools directly to the project.
+
+## MCP Servers
+This project includes configurations for Model Context Protocol (MCP) servers.
+
+### Context7
+Context7 provides up-to-date documentation and code examples for programming libraries.
+- **Setup**: Configured to run locally via `npx`.
+- **Environment Variable**: Ensure `CONTEXT7_API_KEY` is set in your `.env` file for higher rate limits.
+- **Usage**: Referenced in `.mcp.json.example` and `.gemini/settings.json`.

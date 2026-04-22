@@ -4,12 +4,13 @@
     "context7": {
       "type": "local",
       "command": [
-        "docker",
-        "run",
-        "-i",
-        "--rm",
-        "mcp/context7"
+        "npx",
+        "-y",
+        "@upstash/context7-mcp"
       ],
+      "env": {
+        "CONTEXT7_API_KEY": "YOUR_API_KEY_HERE"
+      },
       "enabled": true
     }
   }
