@@ -63,6 +63,7 @@ services:
 
 networks:
   dev-network:
+    name: dev-network
     driver: bridge
 
 volumes:

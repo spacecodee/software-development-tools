@@ -60,9 +60,9 @@ This project includes configurations for Model Context Protocol (MCP) servers.
 
 ### Context7
 Context7 provides up-to-date documentation and code examples for programming libraries.
-- **Setup**: Configured to run locally via `npx`.
-- **Environment Variable**: Ensure `CONTEXT7_API_KEY` is set in your `.env` file for higher rate limits.
-- **Usage**: Referenced in `.mcp.json.example` and `.gemini/settings.json`.
+- **Setup**: Runs via local wrapper script (`./scripts/mcp-context7.sh`) that reads `CONTEXT7_API_KEY` from `.env` and passes it to `npx @upstash/context7-mcp`.
+- **Environment Variable**: Ensure `CONTEXT7_API_KEY` is set in your `.env` file (see `.env.example`).
+- **Usage**: Referenced in `opencode.json.example`, `.mcp.json.example`, `.gemini/settings.json.example`, and `.copilot/mcp-config.json.example`.
 
 ### SonarQube
 Allows the agent to interact with SonarQube for code quality and security analysis.
