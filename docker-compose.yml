@@ -2,7 +2,7 @@ services:
   postgres:
     image: postgres:18.3
     container_name: postgres_db
-    restart: always
+    restart: unless-stopped
     environment:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
@@ -21,7 +21,7 @@ services:
   pgadmin:
     image: dpage/pgadmin4
     container_name: pgadmin_panel
-    restart: always
+    restart: unless-stopped
     environment:
       PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}
       PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD}
@@ -35,7 +35,7 @@ services:
   sonarqube:
     image: sonarqube:${SONAR_VERSION}
     container_name: sonarqube_server
-    restart: always
+    restart: unless-stopped
     environment:
       SONAR_JDBC_URL: jdbc:postgresql://postgres:5432/${SONAR_DB_NAME}
       SONAR_JDBC_USERNAME: ${SONAR_DB_USER}
@@ -54,7 +54,7 @@ services:
   mailpit:
     image: axllent/mailpit
     container_name: mailpit
-    restart: always
+    restart: unless-stopped
     ports:
       - "${MAILPIT_SMTP_PORT}:1025"
       - "${MAILPIT_UI_PORT}:8025"
